@@ -1,14 +1,63 @@
 <ion-header>
-  <ion-navbar>
+  <ion-toolbar>
     <ion-title>
       Ionic Blank
     </ion-title>
-  </ion-navbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+    <ion-list>
+      <ion-item *ngIf="data1">
+        {{data1['country']}}
+        <br>
+        {{data1['post code']}}
+      </ion-item>
+    </ion-list>
+
+<!--
+    <ion-card-content>
+      <ul>
+        <li *ngFor="let p of data1.places">{{p['place name']}}</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>{{data2['country']}}</ion-card-subtitle>
+      <ion-card-title>{{data2['post code']}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ul>
+        <li *ngFor="let p of data2.places">{{p['place name']}}</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>{{data3['country']}}</ion-card-subtitle>
+      <ion-card-title>{{data3['post code']}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ul>
+        <li *ngFor="let p of data3.places">{{p['place name']}}</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>{{data4['country']}}</ion-card-subtitle>
+      <ion-card-title>{{data4['post code']}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ul>
+        <li *ngFor="let p of data4.places">{{p['place name']}}</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+-->
 </ion-content>
