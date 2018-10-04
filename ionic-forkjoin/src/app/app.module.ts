@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { RestApiProvider } from '../providers/rest-api/rest-api';
-
+import { Network } from '@ionic-native/network';
 @NgModule({
   declarations: [
     MyApp,
@@ -26,7 +26,7 @@ import { RestApiProvider } from '../providers/rest-api/rest-api';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    RestApiProvider
+    RestApiProvider, Network
   ]
 })
 export class AppModule {}
